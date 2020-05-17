@@ -56,4 +56,11 @@ class GiantControllerTest {
         Mockito.verify(giantModel).getNourishment();
     }
 
+    @Test
+    public void setSetHealth1(){
+        giantController.setHealth(Health.HEALTHY);
+        Mockito.when(giantController.getHealth()).thenReturn(Health.HEALTHY);
+        assertEquals(giantController.getHealth(),Health.HEALTHY);
+    }
+
 }
