@@ -29,7 +29,7 @@ class GiantModelTest {
     }
 
     @Test
-    public void tesetNourishment() {
+    public void testSetNourishment() {
         final GiantModel giantModel = new GiantModel(Health.HEALTHY, Fatigue.TIRED, Nourishment.HUNGRY);
 
         assertEquals(Nourishment.HUNGRY, giantModel.getNourishment());
