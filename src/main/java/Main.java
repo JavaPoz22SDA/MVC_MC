@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -6,5 +9,10 @@ public class Main {
         GiantController giantController = new GiantController(giantModel, giantView);
 
         giantController.updateView();
+        giantController.setHealth(Health.DEAD);
+        giantController.updateView();
+
+        List<GiantModel> giantModelList = new ArrayList<>();
+
     }
 }
